@@ -162,4 +162,12 @@ input {
     .bill-input {
         width: 90%;
     }
+
+    button {
+        width: 70%;
+    }
+
+    .custom {
+        width: 65%;
+    }
 }
