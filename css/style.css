@@ -1,0 +1,165 @@
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Space Mono', monospace;
+    background-color: hsl(185, 41%, 84%);
+}
+
+.container {
+    display: flex;
+    min-width: 800px;
+    min-height: 40vh;
+    border-radius: 10px;
+    background-color: white;
+    padding: 1.5em;
+    box-shadow: 1px 1px 10px 3px hsl(185, 41%, 84%);
+}
+
+.calculation,
+.display {
+    width: 50%;
+    padding: 1.5em;
+    padding-top: 0;
+}
+
+.display {
+    background-color: hsl(183, 100%, 15%);
+    border-radius: 10px;
+    color: white;
+}
+
+.row-1,
+.row-2 {
+    display: flex;
+    justify-content: flex-start;
+    margin-left: -3em;
+}
+
+li {
+    list-style-type: none;
+    width: 33%;
+    margin: 0 0.5em;
+}
+
+.bill-input {
+    width: 95%;
+    height: 30px;
+    background-color: hsl(189, 41%, 97%);
+    border: none;
+}
+
+.num-people {
+    width: 95%;
+    height: 30px;
+    background-color: hsl(189, 41%, 97%);
+    border: none;
+}
+
+button {
+    width: 120px;
+    height: 40px;
+    background-color: hsl(183, 100%, 15%);
+    color: white;
+    border-radius: 7px;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.custom {
+    background-color: hsl(185, 41%, 84%);
+    color: hsl(186, 14%, 43%);
+    width: 115px;
+    height: 30px;
+    border-radius: 7px;
+    text-align: center;
+}
+
+.custom::placeholder {
+    font-weight: 700;
+    color: hsl(183, 100%, 15%);
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: hsl(172, 67%, 45%);
+}
+
+.tip-per-person,
+.total-per-person {
+    display: flex;
+    justify-content: space-between;
+}
+
+.tip-per-person {
+    margin-top: 2em;
+}
+
+.person {
+    color: hsl(172, 67%, 45%);
+    font-size: 14px;
+}
+
+.total-fig,
+.tip-amount-fig {
+    color: hsl(172, 67%, 45%);
+}
+
+.reset {
+    margin-top: 6em;
+    width: 100%;
+    text-transform: uppercase;
+    background-color: hsla(183, 85%, 23%, 0.733);
+    color:hsl(183, 100%, 15%);
+}
+
+.input-container {
+    display: flex;
+}
+
+input {
+    font-size: 20px;
+    font-family: 'Space Mono', monospace;
+    font-weight: 700;
+    display: inline;
+    align-self: flex-end;
+    text-align: end;
+}
+
+.logo {
+    background-color: hsl(189, 41%, 97%);
+}
+
+.num-people-heading {
+    display: inline-block;
+}
+
+.cant-be-zero {
+    display: inline;
+    margin-left: 6em;
+    text-align: right;
+    color: orangered;
+    font-weight: 700;
+}
+
+@media (max-width: 900px) {
+    .container {
+        flex-direction: column;
+        min-width: 0;
+    }
+
+    .calculation {
+        width: 100%;
+    }
+
+    .display {
+        width: 90%;
+    }
+
+    .num-people,
+    .bill-input {
+        width: 90%;
+    }
+}
